@@ -1,0 +1,10 @@
+{
+  "name": "@tsxui/styles",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "type": "module",
+  "repository": "git@github.com:tsxui/styles.git",
+  "author": "Canh Nguyen Van <canhnv@nhanlucsieuviet.com>",
+  "license": "MIT"
+}

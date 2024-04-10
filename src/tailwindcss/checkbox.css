@@ -1,0 +1,41 @@
+.Checkbox-root {
+  @apply inline-flex gap-2 items-center;
+}
+
+.Checkbox-input {
+  @apply hidden;
+}
+
+.Checkbox-checkbox {
+  @apply
+    inline-block
+    w-5
+    h-5
+    min-w-5
+    min-h-5
+    bg-white/[0.1]
+    backdrop-blur-md
+    rounded
+    transition-all
+    relative
+    before:absolute
+    before:w-2.5
+    before:h-1.5
+    before:border-l-2
+    before:border-b-2
+    before:border-white
+    before:top-1.5
+    before:left-[5px]
+    before:-rotate-45
+    before:scale-0
+    before:opacity-0
+    before:transition-all;
+}
+
+.Checkbox-input:checked + .Checkbox-checkbox {
+  @apply bg-sky-500/[0.3] before:scale-100 before:opacity-100;
+}
+
+.Checkbox-label {
+  @apply text-sm;
+}
